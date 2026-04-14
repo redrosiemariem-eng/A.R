@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Home Decor</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+}
+
+/* Navbar */
+header {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero div {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: #e67e22;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #d35400;
+}
+
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Products */
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    color: gray;
+}
+
+/* About */
+.about {
+    background: #ecf0f1;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Elegant Decor</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div>
+        <h1>Design Your Dream Home</h1>
+        <p>Modern • Stylish • Affordable</p>
+        <button>Shop Now</button>
+    </div>
+</section>
+
+<!-- Features -->
+<section>
+    <h2>Why Choose Us</h2>
+    <div class="features">
+        <div class="feature-box">
+            <h3>High Quality</h3>
+            <p>Premium materials for long-lasting beauty</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Affordable Prices</h3>
+            <p>Luxury designs at budget-friendly rates</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Fast Delivery</h3>
+            <p>Quick and safe delivery to your doorstep</p>
+        </div>
+    </div>
+</section>
+
+<!-- Products -->
+<section>
+    <h2>Popular Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582582494700-6a6c7e82b1c4">
+            <h3>Luxury Sofa</h3>
+            <p>Soft and modern design</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <h3>Wall Frames</h3>
+            <p>Decorate your walls beautifully</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+            <h3>Stylish Lamp</h3>
+            <p>Perfect lighting for your home</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        We provide high-quality home decor items that transform your living space 
+        into a modern and elegant environment. Our mission is to bring beauty, 
+        comfort, and affordability together.
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button>Send Message</button>
+</section>
+
+<footer>
+    <p>© 2026 Elegant Decor | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
